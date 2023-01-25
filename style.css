@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* font-family: 'Raleway', sans-serif; font for heading and nav  */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main-list {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.second-button{
+    cursor: pointer;
+}
+.second-button:active{
+    background-color: hsl(240, 50%, 68%); ;
+}
+li {
+    margin-left: 20px;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+ul li a:hover{
+    color: blue;
+}
+
+.photo-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.heading-of-header {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif
+}
+
+.intro {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.fylo-sotres {
+    font-weight: 400;
+}
+
+.yourmail {
+    display: inline-flex;
+
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+}
+.first-input,
+.first-button {
+    padding: 10px 0;
+    border-radius: 5px;
+}
+.first-input:focus{
+    color: blue;
+}
+.first-input::placeholder {
+    color: grey;
+    padding-left: 20px;
+}
+
+.first-button {
+    cursor: pointer;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    font-weight: 700;
+    border: none;
+    box-shadow: 2px 2px 5px 5px gainsboro;
+}
+
+.first-button:active {
+    background-color: hsl(240, 50%, 68%);
+}
+
+@media(min-width:768px) {
+    header {
+        padding: 50px;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading-of-header {
+        order: 1;
+        text-align: left;
+    }
+
+    .heading {
+        max-width: 70%;
+    }
+
+    .photo-back {
+        order: 2;
+    }
+
+    .photo-back img {
+        width: 600px;
+    }
+
+    .yourmail {
+        flex-direction: row;
+    }
+
+    .first-input,
+    .first-button {
+        padding: 10px 25px;
+    }
+   .card-one{
+
+   }
+}
+
+main {
+    background-image: url(images/bg-curve-mobile.svg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    margin-top: 100px;
+}
+main{
+    padding: 0 20px;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:40px;
+    padding-top:50px ;
+    flex-wrap: wrap;
+}
+ /* @media(min-width:768px){
+    .main-content{
+        flex-direction: row;
+    }
+} */
+.productive{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif
+}
+.both-headind{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: hsl(0, 0%, 53%);
+}
+.second-head-product,.third-head-product{
+    font-weight: lighter;
+}
+.how-fylo-work{
+    text-decoration: none;
+    color: hsl(170, 45%, 43%);
+    font-weight: 600;
+    border-bottom: 2px solid hsl(170, 45%, 43%);
+    padding-bottom: 5px;
+}
+.arrow{
+    padding-left: 5px;
+}
+.card-one{
+    margin-top: 50px;
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 0 0 10px 3px rgb(222, 219, 219) ;
+    border-radius: 10px;
+  max-width: 80%;
+  margin-bottom: 50px;
+  max-width: 400px;
+
+}
+.quote{
+    margin-bottom: 10px;
+}
+.fylo-improve {
+margin-bottom: 10px;
+font-weight: 600;}
+.profile-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.img-prof img{
+    border-radius: 50%;
+}
+.second-content{
+    padding: 50px 20px;
+    background-color: hsla(240, 50%, 13%, 0.699);
+}
+.second-button{
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+.fylo-sotres-two{
+    color: whitesmoke;
+    font-weight: 500;
+    line-height: 25px;
+}
+.intro-two{
+    color: whitesmoke;
+    padding-bottom: 10px;
+}
+
